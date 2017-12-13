@@ -9,3 +9,7 @@ This repository contains the **[Polymer](https://www.polymer-project.org/)** int
 ## Slides and Work Material
 
 [Slides are here](https://docs.google.com/presentation/d/1h_wp7a_xbjJxeNLu6_Dd8Q4fBy2zA6jc1AjZrNqSEjo/edit?usp=sharing)
+
+## Following along
+
+To follow along in case you are stuck, you can use the [commit history](https://github.com/jlengrand/web-components-workshop-polymer/commits/master).
