@@ -1,0 +1,29 @@
+{
+  "name": "web-components-workshop-polymer",
+  "version": "1.0.0",
+  "description": "A simple polymer application built for a workshop about web components",
+  "main": "index.html",
+  "scripts": {
+    "start": "node ./node_modules/.bin/http-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bower": "node ./node_modules/.bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlengrand/web-components-workshop-polymer.git"
+  },
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "author": "Julien Lengrand-Lambert <julien@lengrand.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlengrand/web-components-workshop-polymer/issues"
+  },
+  "homepage": "https://github.com/jlengrand/web-components-workshop-polymer#readme",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "http-server": "^0.10.0"
+  }
+}

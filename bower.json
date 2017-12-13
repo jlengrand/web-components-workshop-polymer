@@ -1,0 +1,22 @@
+{
+  "name": "web-components-workshop-polymer",
+  "version": "1.0",
+  "description": "A simple polymer application built for a workshop about web components",
+  "main": "index.html",
+  "keywords": [
+    "web-components",
+    "polymer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlengrand/web-components-workshop-polymer.git"
+  },
+  "homepage": "https://github.com/jlengrand/web-components-workshop-polymer",
+
+  "authors": [
+    "Julien Lengrand-Lambert <julien@lengrand.fr>"
+  ],
+  "dependencies": {
+    "polymer": "2"
+  }
+}
