@@ -1,0 +1,22 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+
+<dom-module id="hello-world">
+  <template>
+    <style>
+      :host {
+        font-family: sans-serif;
+      }
+    </style>
+  
+    <h2>Hello Meetup!</h2>
+
+</template>
+
+  <script>
+    class HelloWorldElement extends Polymer.Element {
+      static get is() { return 'hello-world' }
+    }
+    customElements.define(HelloWorldElement.is, HelloWorldElement);
+    </script>
+</dom-module>
