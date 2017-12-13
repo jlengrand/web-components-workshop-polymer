@@ -4,10 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    
+        <link rel="import" href="/bower_components/polymer/polymer.html">
+        
         <link rel="import" href="/src/components/hello-world.html">  
         <link rel="import" href="/bower_components/google-map/google-map.html">  
-        
+        <link rel="import" href="/bower_components/google-map/google-map-directions.html">
+        <link rel="import" href="/bower_components/paper-input/paper-input.html">
+
         <!--https://developers.google.com/maps/documentation/javascript/get-api-key -->
 
         <style>
@@ -25,14 +28,25 @@
 
         <hello-world></hello-world>
 
-        <div id="map">
-            <google-map latitude="52.092876" longitude="5.104480" zoom="13"
-                api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
-                <google-map-marker latitude="52.092876" longitude="5.104480"
-                title="UTrecht!">
-                </google-map-marker>
-            </google-map>
-        </div>
-
+        <dom-bind>
+            <template>
+                <div id="map">
+                        <google-map map="{{map}}" latitude="52.092876" longitude="5.104480" zoom="13"
+                            api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
+                            <google-map-marker latitude="52.092876" longitude="5.104480"
+                            title="Utrecht!">
+                            </google-map-marker>
+                        </google-map>
+                        <google-map-directions
+                            map="{{map}}"  
+                            start-address="{{start}}"
+                            end-address="Utrecht Central"
+                            api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
+                        </google-map-directions>
+                    </div>
+                    <paper-input label="Start location" value="{{start}}"></paper-input>
+            </template>
+        </dom-bind>
+        
     </body>
 </html>

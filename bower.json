@@ -12,11 +12,15 @@
     "url": "git+https://github.com/jlengrand/web-components-workshop-polymer.git"
   },
   "homepage": "https://github.com/jlengrand/web-components-workshop-polymer",
-
   "authors": [
     "Julien Lengrand-Lambert <julien@lengrand.fr>"
   ],
   "dependencies": {
+    "polymer": "^2.3.0",
+    "google-map": "^2.0.3",
+    "paper-input": "^2.0.5"
+  },
+  "resolutions": {
     "polymer": "2"
   }
 }
